@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="tabla.xsl">
+
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore>
+<book category="COOKING">
+   <title lang="en">Everyday Italian</title>
+   <author>Giada De Laurentiis</author>
+   <year>2005</year>
+   <price>30.00</price>
+</book>
+<book category="CHILDREN">
+   <title lang="en">Harry Potter</title>
+   <author>J K. Rowling</author>
+   <year>2005</year>
+   <price>29.99</price>
+</book>
+<book category="SERIE">
+   <title lang="en">BREAKING BAD</title>
+   <author>Vince Gilligan</author>
+   <year>2008</year>
+   <price>INCALCULABLE</price>
+</book>
+<book category="pelicula">
+   <title lang="en">AMerican pie</title>
+   <author>tarantino</author>
+   <year>2006</year>
+   <price>3.50</price>
+</book>
+</bookstore>

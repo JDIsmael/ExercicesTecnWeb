@@ -1,0 +1,51 @@
+.grid-1 {
+    padding-top: 40px;
+    display: grid;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-1 div {
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.item-1 {
+    background: chocolate;
+}
+
+.item-2 {
+    background: crimson;
+}
+
+.item-3 {
+    background: cyan;
+}
+
+.item-4 {
+    background: darkgreen;
+}
+
+.item-5 {
+    background: darksalmon;
+}
+
+.item-6 {
+    background: darkviolet;
+}
+
+.item-7 {
+    background: firebrick;
+}
+
+.item-8 {
+    background: gold;
+}
+
+.item-9 {
+    background: hotpink;
+}

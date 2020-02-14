@@ -1,0 +1,105 @@
+/* Selector Universal */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Selector de tipo */
+
+h {
+    color: red;
+    font-size: 10pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,
+h2,
+h3 {
+    color: rebeccapurple;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* selector de clase */
+
+.bla {
+    font-size: 40pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellowgreen;
+}
+
+h.bla {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+    font-size: 40px;
+}
+
+
+/* Selector ID */
+
+#selectID {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: chocolate;
+}
+
+
+/* Selectores avanzados */
+
+#infoespecial p {
+    color: rgb(114, 215, 94);
+    font-size: 23px;
+}
+
+#contenido a {
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+#contenido ul a {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+#contenido a:hover {
+    font-size: 20pt;
+    color: rgb(10, 0, 210);
+}
+
+
+/* Selectores dinamicos */
+
+h5::first-letter {
+    font-size: 50px;
+    color: black;
+}
+
+
+/* Selector Adyacente*/
+
+h6 {
+    font-size: 20px;
+}
+
+h6+p {
+    font-size: 60px;
+    color: green;
+}
+
+
+/*Selector atributo */
+
+[href="https://www.facebook.com"] {
+    font-size: 60pt;
+    color: yellowgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+[href="https://www.facebook.com"]:hover {
+    font-size: 60pt;
+    color: rgb(50, 81, 205);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

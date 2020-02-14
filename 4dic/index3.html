@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<div id="primero">
+<p>Algún texto.</p>
+<p>Un poco más de texto.</p></div>
+<div id="segundo"></div>
+<script>
+var contenido = document.getElementById('primero').innerHTML;
+document.getElementById('primero').innerHTML = '<p>Un parrafo de texto para reemplazar los dos anteriores.</p>';
+</script>
+<p>INNERHTML</p>
+<p><strong>Método de acceso rápido al contenido completo de un contenedor en HTML</strong>. Rápidamente el resto de exploradores lo añadieron en su soporte de lenguaje.</p>
+<p>Podemos usar innerHTML para recuperar el contenido actual de un contenedor o insertar nuevo contenido en ese contenedor.</p>
+<p>Por <strong>contenedor</strong> entendemos aquello que está entre las cláusulas <strong>&lt; div &gt; y &lt; /div &gt;</strong>.</p>
+<p>El <strong>elemento DIV define un contenedor genérico</strong>, el cuál permite a los programadores definir estilos o bloques de contenido.</p>
+<p>Como <strong>parámetros</strong> a <strong>DIV</strong> tenemos <strong>ID, CLASS y ALIGN</strong>, aunque éste ultimo cada vez se emplea menos en favor de las CSS.</p>
+</body>
+</html>

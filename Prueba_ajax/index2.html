@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <title>Hola Mundo con AJAX, version 2</title>
+
+    <script type="text/javascript" language="javascript">
+        var READY_STATE_UNINITIALIZED = 0;
+        var READY_STATE_LOADING = 1;
+        var READY_STATE_LOADED = 2;
+        var READY_STATE_INTERACTIVE = 3;
+        var READY_STATE_COMPLETE = 4;
+
+        var peticion_http;
+        //A continuación, se crea una función genérica de carga de contenidos mediante AJAX:
+        function cargaContenido(url, metodo, funcion) {
+            peticion_http = inicializa_xhr();
+
+            if (peticion_http) {
+                peticion_http.onreadystatechange = funcion;
+                peticion_http.open(metodo, url, true);
+                peticion_http.send(null);
+            }
+        }
+        //La función inicializa_xhr() se emplea para encapsular la creación del objeto XMLHttpRequest:
+
+
+        function inicializa_xhr() {
+            if (window.XMLHttpRequest) {
+                return new XMLHttpRequest();
+            } else if (window.ActiveXObject) {
+                return new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+        /*
+        La función definida admite tres parámetros: la URL del contenido que se va a cargar, el método utilizado para realizar la petición HTTP y una referencia
+        a la función que procesa la respuesta del servidor.
+
+        En primer lugar, la función cargaContenido() inicializa el objeto XMLHttpRequest (llamado xhr de forma abreviada). Una vez inicializado, se emplea el objeto
+         peticion_http para establecer la función que procesa la respuesta del servidor. Por último, la función cargaContenido() realiza la petición al servidor empleando
+         la URL y el método HTTP indicados como parámetros.
+        */
+
+
+        //La función muestraContenido() también se refactoriza para emplear las variables globales definidas:
+        function muestraContenido() {
+            if (peticion_http.readyState == READY_STATE_COMPLETE) {
+                if (peticion_http.status == 200) {
+                    alert(peticion_http.responseText);
+                }
+            }
+        }
+
+        function descargaArchivo() {
+            cargaContenido("holamundo.txt", "GET", muestraContenido);
+        }
+
+        window.onload = descargaArchivo;
+    </script>
+
+</head>
+
+<body></body>
+
+</html>

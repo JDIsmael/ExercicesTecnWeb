@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Creacion de Palabras</p>
+
+    <script type="text/javascript">
+        var valor = prompt("Cuantos parrafos desea ingresar");
+        var parrafos = [];
+        var texto = [];
+        var cont = 0;
+
+        function palabra() {
+            var letra = "";
+            for (var i = 0; i < 3; i++) {
+                for (var j = 0; j < 10; j++)
+                    if (Math.random() * 1 == 1) {
+                        letra += String.fromCharCode(Math.random() * (90 - 65) + 65);
+                        check = false;
+                    } else {
+                        letra += String.fromCharCode(Math.random() * (122 - 97) + 97);
+                        check = true;
+                    }
+                letra += " ";
+            }
+            return letra;
+        }
+
+        function creacion_nodo(parrafos, textos, tam) {
+            for (var i = 0; i < tam; i++) {
+                parrafos[i] = document.createElement("p");
+                textos[i] = document.createTextNode(palabra());
+                parrafos[i].appendChild(textos[i]);
+            }
+            return parrafos;
+        }
+
+        function subirAlDocument(parrafos, tam) {
+            for (var i = 0; i < tam; i++)
+                document.body.appendChild(parrafos[i]);
+        }
+        subirAlDocument(creacion_nodo(parrafos, texto, valor), valor);
+
+
+        function eliminar() {
+            var elementos_eliminar = prompt("Cuantos parrafos desea eliminar (maximo " + (parrafos.length - cont) + ")");
+            var parrafo_eliminar = document.getElementsByTagName("p");
+            for (var i = 1; i <= elementos_eliminar; i++, cont++)
+                parrafo_eliminar[i].parentNode.removeChild(parrafo_eliminar[i]);
+        }
+        window.setTimeout("eliminar()", 5000);
+    </script>
+
+    <p>Eliminar parrafo en 5 segundos...</p>
+</body>
+
+</html>

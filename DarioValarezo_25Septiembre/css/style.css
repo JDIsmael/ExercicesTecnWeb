@@ -1,0 +1,85 @@
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+body {
+    width: 48%;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 30px;
+    color: mediumseagreen;
+}
+
+h2 {
+    font-size: 24px;
+    color: blue;
+}
+
+.atencion {
+    color: red;
+}
+
+.sub_orange {
+    color: orange;
+}
+
+p span {
+    color: red;
+    text-decoration: underline red;
+}
+
+p .atencion2 {
+    color: blue;
+    text-decoration: underline blue;
+    font-family: cursive;
+}
+
+table,
+tr,
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+caption {
+    color: blue;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.parrafo_Color {
+    color: olive;
+}
+
+p .format {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.parrafo_Color #sub_green {
+    color: green;
+    text-decoration: underline green;
+}
+
+p #color_violet {
+    color: darkorchid;
+    text-decoration: none;
+}

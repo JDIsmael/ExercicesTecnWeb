@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body onresize="onresize()" onunload="usoOnunload()" onload="UsoOnload()">
+    <script>
+        function UsoOnload() {
+            alert("Pagina Cargada...");
+        }
+
+        function usoOnunload() {
+            alert("Gracias por visitar esta pagina");
+        }
+    </script>
+
+    <p>Try to resize the browser window to display the windows height and width.</p>
+    <p id="UsoOnresize"></p>
+    <script>
+        function onresize() {
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+            var txt = "Tamaño de Ventana de Window: anchura=" + w + ", altura=" + h;
+            document.getElementById("UsoOnresize").innerHTML = txt;
+        }
+    </script>
+
+    <h1><b>Utilizando mouseover y mouseOut</b></h1>
+    <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Pasa el mouse sobre mí</p>
+    <script>
+        function mouseOver() {
+            document.getElementById("demo").style.color = "red";
+        }
+
+        function mouseOut() {
+            document.getElementById("demo").style.color = "blue";
+        }
+    </script>
+    <h2>Utilizando mouseUp Onmouseup</h2>
+    <p> da click sobre un parrafo</p>
+    <p id="UsoOnmouseUp" onmouseup="mouseUp()">
+        Pulse para cambiar de color usando onmouseup
+    </p>
+    <script>
+        function mouseDown() {
+            document.getElementById("myP").style.color = "silver";
+        }
+
+        function mouseUp() {
+            document.getElementById("UsoOnmouseUp").style.color = "blue";
+        }
+    </script>
+    <form onreset="myFunction()">
+        Ingrese algo: <input type="text">
+        <input type="reset">
+    </form>
+
+    <script>
+        function myFunction() {
+            alert("El Formulario se reseteo");
+        }
+    </script>
+    Seleccione el texto: <input type="text" value="Hello world!" onselect="usoOnselect()">
+
+    <script>
+        function usoOnselect() {
+            alert("Tu has seleccionado parte del texto del formulario!");
+        }
+    </script>
+    <form action="" onsubmit="usoOnsubmit()">
+        Ingrese un texto: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function usoOnsubmit() {
+            alert("Formulario enviado exitosamente");
+        }
+    </script>
+
+    Ingresa un texto: <input type="text" id="fname" onblur="usoOnblur()">
+
+    <p>Cuando abandona el campo de entrada, se activa una función que transforma el texto de entrada en mayúsculas.</p>
+
+    <script>
+        function usoOnblur() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+
+    <select id="mySelect" onchange="usoOnchange()">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+          </select>
+
+    <script>
+        function usoOnchange() {
+            var x = document.getElementById("mySelect").value;
+            document.write('<br>Tu seleccionaste: ' + x);
+        }
+    </script>
+
+    <p onclick="alert('Ha dado click')">De click aqui</p>
+    <p ondblclick="alert('Ha dado doble click')">De dos veces click aqui</p>
+    Ingresa un texto: <input type="text" onfocus="usoOnfocus(this)">
+
+    <p>Cuando el campo de entrada se enfoca, se activa una función que cambia el color de fondo.</p>
+
+    <script>
+        function usoOnfocus(x) {
+            x.style.background = "yellow";
+        }
+    </script>
+
+    <input type="text" onkeydown="usoOnkeydown()">
+    <script>
+        function usoOnkeydown() {
+            alert("Has ingresado un caracter");
+        }
+    </script>
+
+    <input type="text" onkeypress="usoOnkeypress()">
+
+    <script>
+        function usoOnkeypress() {
+            alert("Presionó una tecla dentro del campo de entrada");
+        }
+    </script>
+    <h1>Utilizacion de onkeyup</h1>
+    <p>Una función se activa cuando el usuario suelta una tecla en el campo de entrada. La función transforma el carácter en mayúsculas.</p>
+
+    Ingresa un texto: <input type="text" id="onk" onkeyup="usoOnkeyUP()">
+
+    <script>
+        function usoOnkeyUP() {
+            var x = document.getElementById("onk");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+    <h1>Utilizacion de onmousemove</h1>
+
+    <body>
+        <div onmousemove="UsomyFunction(event)" onmouseout="clearCoor()"></div>
+
+        <p>Pase el mouse sobre el rectángulo de arriba y obtenga las coordenadas del puntero del mouse.</p>
+
+        <p>Cuando se mueve el mouse sobre el div, el elemento p mostrará las coordenadas horizontales y verticales del puntero del mouse, cuyos valores se devuelven desde las propiedades clientX y clientY en el MouseEvent objeto.</p>
+
+        <p id="tamDiv"></p>
+
+        <script>
+            function UsomyFunction(e) {
+                var x = e.clientX;
+                var y = e.clientY;
+                var coor = "Coordinates: (" + x + "," + y + ")";
+                document.getElementById("tamDiv").innerHTML = coor;
+            }
+
+            function clearCoor() {
+                document.getElementById("tamDiv").innerHTML = "";
+            }
+        </script>
+
+
+
+    </body>
+
+</html>

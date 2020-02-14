@@ -1,0 +1,95 @@
+{
+  "5T": {
+    "color": "rgba(255, 240, 0, 0.3)",
+    "IPO": {
+      "name": "Interacción Persona-Ordenador",
+      "calname": "IPO",
+      "hours": [{
+          "day": 1,
+          "start": 7,
+          "duration": 2
+        },
+        {
+          "day": 3,
+          "start": 9,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "PYE1": {
+      "name": "Probabilidad y Estadística I",
+      "calname": "PYE1",
+      "hours": [{
+          "day": 1,
+          "start": 9,
+          "duration": 2
+        },
+        {
+          "day": 5,
+          "start": 7,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "SSDD": {
+      "name": "Sistemas digitales",
+      "calname": "SSDD",
+      "hours": [{
+          "day": 2,
+          "start": 7,
+          "duration": 2
+        },
+        {
+          "day": 4,
+          "start": 9,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "Calc": {
+      "name": "Cálculo",
+      "calname": "Calc",
+      "hours": [{
+          "day": 1,
+          "start": 6,
+          "duration": 1
+        },
+        {
+          "day": 2,
+          "start": 9,
+          "duration": 2
+        },
+        {
+          "day": 4,
+          "start": 6,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "ProgII": {
+      "name": "Programación II",
+      "calname": "ProgII",
+      "hours": [{
+          "day": 3,
+          "start": 7,
+          "duration": 2
+        },
+        {
+          "day": 5,
+          "start": 9,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    }
+  }
+}

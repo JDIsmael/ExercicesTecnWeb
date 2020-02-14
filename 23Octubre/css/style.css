@@ -1,0 +1,30 @@
+.title {
+    font-family: 'Mansalva', cursive;
+    font-size: 40px;
+    color: darkgreen;
+    margin-top: 3%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.list-style {
+    list-style: georgian;
+}
+
+.rounded {
+    border-radius: 36px 36px 36px 36px;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+
+.border {
+    border: 5px solid black;
+}

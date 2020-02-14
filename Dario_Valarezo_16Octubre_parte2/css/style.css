@@ -1,0 +1,135 @@
+body {
+    background: whitesmoke;
+}
+
+.grid-1 {
+    padding-top: 40px;
+    display: grid;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.grid-2 {
+    padding-top: 5px;
+    display: grid;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.grid-1 div {
+    color: black;
+    font-size: 20px;
+}
+
+.grid-1 .item div {
+    height: 50%;
+    width: 100%;
+}
+
+.grid-2 div {
+    color: black;
+    font-size: 20px;
+}
+
+.grid-1 img {
+    width: 100%;
+}
+
+.grid-2 img {
+    width: 100%;
+}
+
+p {
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.parrafo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.item {
+    background: white;
+    border: 0.05px solid black;
+}
+
+
+/* CSS boton */
+
+.button {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    transition: all 1s;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.button:hover {
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+.button:focus {
+    color: cadetblue;
+    background-color: #ffffff;
+    border-radius: 30% 30% 27% 27%;
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.info,
+.correcto,
+.error,
+.validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    width: auto;
+}
+
+.info {
+    color: rgb(0, 28, 155);
+    background-color: #BDE5F8;
+    background-image: url('https://www.jose-aguilar.com/scripts/css/alertas/imagenes/info.jpg');
+}
+
+.correcto {
+    color: rgb(16, 138, 71);
+    background-color: #DFF2BF;
+    background-image: url('https://www.jose-aguilar.com/scripts/css/alertas/imagenes/correcto.JPG');
+}
+
+.error {
+    color: rgb(212, 0, 11);
+    background-color: #FFBABA;
+    background-image: url('https://www.jose-aguilar.com/scripts/css/alertas/imagenes/error.jpg');
+}
+
+.num {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0066FF;
+}

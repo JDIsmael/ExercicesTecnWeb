@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es-419">
+  <head>
+    <!-- SEO -->
+    <title>Horario B del Día - La Salle 11C | Horario Escolar</title>
+    <!-- 
+    <meta http-equiv="refresh" content="0; URL='https://www.salle11c.tk/dia'" /> 
+    -->
+    <meta name="description" content="Este es el horario del día de hoy, actualizado cada día, es capaz de calcular que día del horario corresponde a la fecha. De manera online, horario de Undecimo-C (11-C) del Colegio La Salle de Bucaramanga, aquí encontrarás el horario actual correspondiente.">
+    <link href="URL" rel="canonical">
+    <meta name="keywords" content="Horario,La Salle,Bucaramanga,Online,11-C,11C,Colegio,Horario del Dia,Día">
+    <meta name="author" content="Satiago Gutierrez - Alcalde 11C">
+    <!-- Fin de SEO -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136399262-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136399262-1');
+    </script>
+    <style media="screen">
+      p{
+        background-color: white;
+        width: 20%;
+      }
+      .titulos{
+        color:black;
+        background-color: white;
+      }
+      td,th{
+        text-align: center;
+        color: black;
+        background-color: white;
+      }
+      body{
+        font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+        width: 100%;
+        height: 90%;
+      }
+      h1{
+        width: 30%;
+      }
+    </style>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta property="og:image" itemprop="image" content="img/300lasallebga.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/dia-resp.css">
+    <link rel="stylesheet" type="text/css" href="css/fondo.css">
+  </head>
+  <body>
+    <center>
+    <div class="">
+      <h1>Horario B Escolar del día</h1>
+      <p>Hoy es:</p>
+      <p id="fecha"></p>
+      <p>El día correspondiente para mañana es:</p>
+      <p id="dia"></p>
+      <p id="ciclo">Error al obtener el Ciclo</p>
+    </div>
+    <table id="tabla" border="1">
+      <tr>
+        <th colspan="2"></th>
+        <th>Hoy</th>
+        <th>Mañana</th>
+      </tr>
+      <tr class="titulos">
+        <th colspan="2">Hora</th>
+        <th id="1">Día Hoy</th>
+        <th id="2">Día Mañana</th>
+      </tr>
+      <tr>
+        <td>7:15 - 8:20</td>
+        <td>0</td>
+        <td id="E1">Actividad X</td>
+        <td id="E2">Actividad X</td>
+      </tr>
+      <tr>
+        <td>8:20 - 8:50</td>
+        <td>1</td>
+        <td id="Hcom1">H. Comunicativas</td>
+        <td id="Hcom2">H. Comunicativas</td>
+      </tr>
+      <tr>
+        <td>8:50 - 9:35</td>
+        <td>2</td>
+        <td id="c1l1">Cargando ...</td>
+        <td id="c2l1">Cargando ...</td>
+      </tr>
+      <tr>
+        <td>9:35 - 10:05</td>
+        <td>-</td>
+        <td colspan="2">Descanso</td>
+      </tr>
+      <tr>
+        <td>10:05 - 10:50</td>
+        <td>3</td>
+        <td id="c1l2">Cargando ...</td>
+        <td id="c2l2">Cargando ...</td>
+      </tr>
+      <tr>
+        <td>10:50 - 11:35</td>
+        <td>4</td>
+        <td id="c1l3">Cargando ...</td>
+        <td id="c2l3">Cargando ...</td>
+      </tr>
+      <tr>
+        <td>11:35 - 12:15</td>
+        <td>5</td>
+        <td id="c1l4">Cargando ...</td>
+        <td id="c2l4">Cargando ...</td>
+      </tr>
+      <tr>
+        <td>12:15 - 1:15</td>
+        <td>-</td>
+        <td colspan="2">Almuerzo</td>
+      </tr>
+      <tr>
+        <td>1:15 - 1:55</td>
+        <td>6</td>
+        <td id="c1l5">Cargando ...</td>
+        <td id="c2l5">Cargando ...</td>
+      </tr>
+      <tr>
+        <td>1:55 - 2:35</td>
+        <td>7</td>
+        <td id="c1l6">Cargando ...</td>
+        <td id="c2l6">Cargando ...</td>
+      </tr>
+      <tr>
+        <td>2:35 - 3:15</td>
+        <td>8</td>
+        <td id="c1l7">Cargando ...</td>
+        <td id="c2l7">Cargando ...</td>
+      </tr>
+      <tr>
+        <td colspan="4">-- // -- Uniforme -- // --</td>
+      </tr>
+      <tr>
+        <td colspan="2">Uniforme</td>
+        <td id="u1">Cargando ...</td>
+        <td id="u2">Cargando ...</td>
+      </tr>
+    </table>
+    <footer>
+    <p class="opciones">Por favor seleccione una de las siguientes tres opciones:</p>
+    <table border="1">
+      <tr>
+        <td>
+        <button type="button" name="dia" onclick="location.href='https://www.salle11c.tk/dia';" style="background-color: yellow;">Ver el Horario del día Normal</button>
+        </td>
+        <td>
+        <button type="button" name="index" onclick="location.href='https://www.salle11c.tk';">Volver al Inicio</button>
+        </td>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <td>
+        <button type="button" name="completo" onclick="location.href='https://www.salle11c.tk/completo';">Vel el Horario Completo</button>
+        </td>
+      </tr>
+    </table>
+    <p>©2019 Santiago G. - Alcalde 11ºC</p>
+    </footer>
+    </center>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
+    <script type="text/javascript" src="scripts/calculo.js"></script>
+  </body>
+</html>

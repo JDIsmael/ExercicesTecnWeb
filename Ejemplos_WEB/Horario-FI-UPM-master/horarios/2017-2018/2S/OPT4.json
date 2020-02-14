@@ -1,0 +1,143 @@
+{
+  "OPT4": {
+    "color": "rgba(0, 255, 240, 0.3)",
+    "TC": {
+      "name": "Computabilidad: Fundamentos y Aplicaciones",
+      "calname": "TC",
+      "hours": [{
+        "day": 1,
+        "start": 9,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "ADW": {
+      "name": "Arquitectura del Data Warehouse",
+      "calname": "ADW",
+      "hours": [{
+        "day": 1,
+        "start": 9,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "AlGe": {
+      "name": "Algoritmos Geométricos",
+      "calname": "AlGe",
+      "hours": [{
+        "day": 2,
+        "start": 6,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "MdD": {
+      "name": "Minería de Datos",
+      "calname": "MdD",
+      "hours": [{
+        "day": 2,
+        "start": 6,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "RPC": {
+      "name": "Robótica y Percepción Computacional",
+      "calname": "RPC",
+      "hours": [{
+        "day": 2,
+        "start": 10,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "CAR": {
+      "name": "Computación de Alto Rendimiento",
+      "calname": "CAR",
+      "hours": [{
+        "day": 2,
+        "start": 10,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "SDFC": {
+      "name": "Sistemas Dinámicos, Fractales y Caos",
+      "calname": "SDFC",
+      "hours": [{
+          "day": 3,
+          "start": 5,
+          "duration": 2
+        },
+        {
+          "day": 4,
+          "start": 6,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "G3DIG": {
+      "name": "Geometría 3D para informática Gráfica",
+      "calname": "G3DIG",
+      "hours": [{
+        "day": 3,
+        "start": 9,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "ABV": {
+      "name": "Aplicaciones de la Biometría de la Voz",
+      "calname": "ABV",
+      "hours": [{
+        "day": 3,
+        "start": 9,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "I2T": {
+      "name": "Ingeniería de Integración Tecnológica",
+      "calname": "I2T",
+      "hours": [{
+        "day": 4,
+        "start": 10,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "FC": {
+      "name": "Fotografía Computacional",
+      "calname": "FC",
+      "hours": [{
+        "day": 5,
+        "start": 5,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "DAW": {
+      "name": "Diseño de Aplicaciones Web",
+      "calname": "DAW",
+      "hours": [{
+        "day": 5,
+        "start": 9,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    }
+  }
+}

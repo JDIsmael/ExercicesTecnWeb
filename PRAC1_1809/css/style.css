@@ -1,0 +1,54 @@
+h1 {
+    color: red;
+    font-family: Verdana;
+    font-size: large;
+}
+
+p {
+    color: gray;
+    font-family: verdana;
+    font-size: medium;
+}
+
+h2 {
+    color: rgb(12, 45, 233);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2:hover {
+    color: rgb(237, 88, 88);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    color: rgb(64, 230, 116);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media print {
+    body {
+        color: rgb(255, 255, 0)
+    }
+}
+
+@media screen {
+    body {
+        font‐size: 44px
+    }
+}
+
+@media screen,
+print {
+    body {
+        line‐height: 1.2
+    }
+}
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 82, 145, 0.858);
+}

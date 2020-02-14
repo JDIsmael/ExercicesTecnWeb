@@ -1,0 +1,3 @@
+Archivo de prueba
+funciona perfectamente
+se esta obteniendo datos con XMLHttpRequest

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" type="text/css">
+    <style>
+        #bookForm input {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="bookForm" class="btn btn-primary btn-lg">
+        <input id="books" type="file" onChange="loadDoc(event)">
+        <label for="books">Cargar archivo</label>
+    </div>
+
+    <table id="bookTable" class="table table-hover">
+        <thead>
+            <tr>
+                <th>Autor</th>
+                <th>Título</th>
+                <th>Año</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4">Sin registros</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

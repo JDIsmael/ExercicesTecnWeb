@@ -1,0 +1,57 @@
+p{
+    background-color: white;
+    width: 20%;
+}
+.titulos{
+    color:black;
+    background-color: white;
+}
+td,th{
+     text-align: center;
+     color: black;
+     background-color: white;
+}
+body{
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    width: 100%;
+    height: 90%;
+}
+h1{
+    width: 30%;
+}
+@-ms-viewport{
+  width: device-width;
+}
+@media screen and (max-width: 414px) {
+    p{
+       background-color: white;
+       width: 360px;
+       text-align: center;
+       font-size: 85%;
+    }
+    .titulos{
+    	color:black;
+    	background-color: white;
+    }
+    td, th{
+    	text-align: center;
+    	color: black;
+    	background-color: white;
+    	font-size: 85%;
+    }
+    body{
+    	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    	height: 90%;
+    }
+    h1{
+    	background-color: orange;
+    	width: 90%;
+    	font-size: 95%;
+    }
+    button{
+    	font-size: 75%;
+    }
+    .opciones{
+    	font-size: 80%;
+    }
+}

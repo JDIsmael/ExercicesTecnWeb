@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>parrafo 1
+        <a href="sadhsfhew"> enlace a ya tu sabes...</a>
+    </p>
+    <p id="dos">parrafo 2</p>
+    <p id="tres"> parrafo 3</p>
+
+    <li>hola</li>
+    <li>como</li>
+    <li>estas</li>
+    <li>tu</li>
+
+    <br>esto es un salto de linea jajajajajajajaaj</br>
+
+    <script type="text/javascript">
+        /*var cont = 1;
+                                var parrafo1 = document.getElementsByTagName("p");
+                                var lista = document.getElementsByTagName("li");
+                                var salto = document.getElementsByTagName("br");
+
+                                for (x of lista)
+                                    alert("objeto de " + cont++ + " lista " + x.innerText);
+                                cont = 1
+
+                                for (x of salto)
+                                    alert("objeto de " + cont++ + " salto " + x);
+                                cont = 1
+                                var enlace = parrafo1[0].getElementsByTagName("a")[0];
+                                alert("Objeto del primer parrafo contiene: " + enlace.innerText);
+
+                                for (x of parrafo1)
+                                    alert("Objeto del " + cont++ + " parrafo    " + x.innerText);
+
+
+                                var parrafo2 = document.getElementById("dos");
+
+                                alert("parrafo por id: " + parrafo2);
+                                var parrafo_creado = document.createElement("p");
+                                var texto = document.createTextNode("Esto es un texto creado en javascript!");
+                                parrafo_creado.appendChild(texto);
+                                document.body.appendChild(parrafo_creado);*/
+
+        var valor = prompt("Cuantos parrafos desea ingresar");
+        var parrafos = [];
+        var texto = [];
+
+        function palabra() {
+            var letra = "";
+            for (var i = 0; i < 3; i++) {
+                for (var j = 0; j < 10; j++)
+                    if (Math.random() * 1 == 1) {
+                        letra += String.fromCharCode(Math.random() * (90 - 65) + 65);
+                        check = false;
+                    } else {
+                        letra += String.fromCharCode(Math.random() * (122 - 97) + 97);
+                        check = true;
+                    }
+                letra += " ";
+            }
+            return letra;
+        }
+
+        function creacion_nodo(parrafos, textos, tam) {
+            for (var i = 0; i < tam; i++) {
+                parrafos[i] = document.createElement("p");
+                textos[i] = document.createTextNode(palabra());
+                parrafos[i].appendChild(textos[i]);
+            }
+            return parrafos;
+        }
+
+        function subirAlDocument(parrafos, tam) {
+            for (var i = 0; i < tam; i++)
+                document.body.appendChild(parrafos[i]);
+        }
+        subirAlDocument(creacion_nodo(parrafos, texto, valor), valor);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pregunta2</title>
+    <script type="text/javascript" src="../js/ejercicio2.js"></script>
+</head>
+
+<body>
+    <form name="form">
+
+        <p>Carros:</p>
+        <select name="cmbColor" id="itemSelec">
+                <option>Tesla</option>
+                <option>Mercedez</option>
+                <option>Roll Royce</option>
+            </select>
+        <p>Ingrese un nuevo Carro: </p>
+        <input type="text" name="inputItem" />
+
+        <input type="button" onclick="agregar_item();" value="Agregar Carro" />
+        <input type="button" onclick="eliminar_item();" value="Eliminar Carro seleccionado" />
+        <input type="button" onclick="modificar_item();" value="Modificar Carro Seleccionado" />
+    </form>
+</body>
+
+</html>

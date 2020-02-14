@@ -1,0 +1,63 @@
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#datos,
+#principal {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+#datos {
+    background: crimson;
+    border: 1 px solid black;
+    width: 260px;
+}
+
+#principal {
+    width: 700px;
+}
+
+#contenido {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contenido li {
+    float: left;
+    width: 33%;
+}
+
+#color_parrafo1 {
+    background: blueviolet;
+}
+
+#color_parrafo2 {
+    background: chartreuse;
+}
+
+#color_parrafo3 {
+    background: cyan;
+}
+
+#color1 {
+    background: yellow;
+}
+
+#color2 {
+    background: blue;
+}
+
+#color3 {
+    background: red;
+}

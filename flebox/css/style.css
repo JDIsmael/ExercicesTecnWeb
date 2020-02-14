@@ -1,0 +1,22 @@
+.contenedor {
+    height: 240px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.elemento {
+    width: 21%;
+    background: rgb(51, 113, 235);
+    margin: 2px 5px;
+    line-height: 2rem;
+    color: white;
+}
+
+.elemento1 {
+    width: 21%;
+    background: rgb(235, 229, 51);
+    margin: 2px 5px;
+    color: white;
+}

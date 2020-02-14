@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="../js/validation.js"></script>
+    <script src="../js/app.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <form method="POST" id="form">
+            <input id="name" type="text" placeholder="Nombre" required>
+            <input id="surname" type="text" placeholder="Apellido" required><br><br>
+            <legend>Departamento</legend>
+            <select name="departamentos" id="departament">
+                <option value="Sistemas">Sistemas</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Finaciero">Finaciero</option>
+            </select><br><br>
+            <legend>Fecha de Nacimiento</legend>
+            <input id="date" type="date" required>
+            <input id="cedula" type="text" placeholder="cedula" required>
+            <input id="email" type="text" placeholder="Email" required>
+            <legend>EDAD</legend>
+            <p id="edad">--</p>
+            <input type="submit">
+            <input type="reset">
+        </form><br><br>
+
+        <input type="text" id="Buscar" placeholder="Ingrese Aspirante a Buscar">
+        <button>Imprimir Aspirante</button>
+        <button id="all">Imprimir TODO</button>
+
+        <div id="imprimir">
+
+        </div>
+        <div id="imprimirAll">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

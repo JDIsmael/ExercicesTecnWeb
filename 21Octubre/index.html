@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2 de Octubre</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, print">
+</head>
+
+<body>
+    <form class="myForm">
+        <label for="customer_name">Nombre </label>
+        <input type="text" name="customer_name" id="customer_name" required>
+
+        <label for="phone_number">Apellido </label>
+        <input type="tel" name="phone_number" id="phone_number">
+
+        <label for="email_address">Cedula </label>
+        <input type="email" name="email_address" id="email_address">
+
+        <fieldset>
+            <legend>Genero</legend>
+            <label> <input type="radio" name="taxi" id="taxi_car" required value="car"> Macho </label>
+            <label> <input type="radio" name="taxi" id="taxi_van" required value="van"> Hembra </label>
+            <label> <input type="radio" name="taxi" id="taxi_tuk" required value="tuktuk"> Otro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extras</legend>
+            <label> <input type="radio" name="extras" id="extras_baby" value="baby"> Casado </label>
+            <label> <input type="radio" name="extras" id="extras_wheel" value="wheelchair"> Soltero </label>
+            <label> <input type="radio" name="extras" id="extras_tip" value="tip"> Divorciado </label>
+        </fieldset>
+
+        <label for="pickup_time">Fecha de Nacimiento</label>
+        <input type="datetime-local" name="pickup_time" id="pickup_time" required>
+
+        <label for="pickup_place">Provincia</label>
+        <select name="pickup_place" id="pickup_place">
+    <option value="" selected="selected">Select One</option>
+    <option value="office" >Pichincha</option>
+    <option value="town_hall" >Imbabura</option>
+    <option value="telepathy" >Guayas</option>
+  </select>
+        <label for="pickup_place">Ciudad</label>
+        <select name="pickup_place" id="pickup_place">
+    <option value="" selected="selected">Select One</option>
+    <option value="office" >Quito</option>
+    <option value="town_hall" >Guayaquil</option>
+    <option value="telepathy" >Ibarra</option>
+  </select>
+        <label for="pickup_place">Canton</label>
+        <select name="pickup_place" id="pickup_place">
+    <option value="" selected="selected">Select One</option>
+    <option value="office" >Pichincha</option>
+    <option value="town_hall" >Imbabura</option>
+    <option value="telepathy" >Guayas</option>
+  </select>
+        <label for="pickup_place">Parroquia</label>
+        <select name="pickup_place" id="pickup_place">
+    <option value="" selected="selected">Select One</option>
+    <option value="office" >sangolqui</option>
+    <option value="town_hall" >conocoto</option>
+    <option value="telepathy" >shirys</option>
+  </select>
+
+        <label for="phone_number">Dirreccion </label>
+        <input type="tel" name="phone_number" id="phone_number">
+        <label for="phone_number">Telefono convencional </label>
+        <input type="tel" name="phone_number" id="phone_number">
+        <label for="phone_number">Telefono Celular </label>
+        <input type="tel" name="phone_number" id="phone_number">
+        <label for="phone_number">Email </label>
+        <input type="tel" name="phone_number" id="phone_number">
+
+    </form>
+</body>
+
+</html>
