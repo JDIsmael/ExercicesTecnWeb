@@ -2,6 +2,7 @@
 Repositorio con todos los ejercicios, talleres y pruebas curso Web
 
 LICENCIA DE LIBRE USO SIEMPRE CUANDO SE DE LOS CREDITOS ADJUNTANDO AL CREADOR DEL CODIGO.
+No me responsabilizo del mal uso.
 
 The GNU General Public License is a free, copyleft license for
 software and other kinds of works.
